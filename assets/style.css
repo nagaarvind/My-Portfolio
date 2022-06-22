@@ -1,0 +1,731 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #101011;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    overflow-x: hidden;              /*doubt in width increases*/
+    padding-top: 5em;
+    min-width: 100px;
+    margin-left: 5%;
+}
+
+#nav{
+    width: 100%;
+    height: 120vh;
+    background-color: aliceblue;
+}
+.nav-container{
+    width: 100%;
+    height: 16vh;                                                  /*---doubt----*/
+    background-color: #101010;
+    
+    
+}
+.nav-container nav img{
+    width: 10%;
+    height: 20vh;
+    padding: 30px;
+    cursor: pointer;
+    margin-top: -90px;
+}
+nav ul{
+    margin-top: -10%;
+    margin-left: 35%;
+    
+}
+nav ul li{
+    display: inline-block;
+    padding: 50px 0px 0px 20%;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: medium;
+    
+}
+nav ul li a:hover{
+    border-top: 4px solid orange;
+    opacity: 0.2em;
+}
+
+/*content-page starts*/
+.person-detail{
+    width: 100%;
+    height: 80vh;
+    border-radius: 40px;
+    margin-top: -80px;
+    margin-left: -1%;
+    background-color:aliceblue;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.pro{
+    display: flex;
+    padding-left: 10%;
+    
+    
+}
+.pro h1{
+    border-top: 2px solid #000;
+    margin-top: 10%;
+    cursor: pointer;
+    font-size: xx-large;
+    font-weight: 600;
+}
+.pro h1:hover{
+    color: #DD4A48;
+}
+.pro p{
+    display: inline-block;
+    max-width: 100%;
+    width: 25%;
+    margin: 15% 0px 0px -8%;
+    margin-top: 15%;
+    font-family: cursive;
+    font-weight: 100;
+    font-size: large;
+    word-spacing: 13px;
+
+}
+
+.myslf{
+    max-width: 100%;
+    width: 150px;
+    margin-left: 10%;
+    margin-top: 20%;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    font-family: 'Nothing You Could Do', cursive;
+    text-decoration: none;
+    padding: 0px;
+    font-size: x-large;
+    animation: typing 1.5s steps(30, end);
+}
+@keyframes typing{
+    from {width: 0}
+    to {width: 10% }
+}
+@keyframes blink-caret{
+    from, to{border-color: transparent}
+    10% {border-color: #000}
+}
+.images{
+    width: 50%;
+    height: 90%;
+    margin-top: 50px;
+    margin-left: 40%;
+    position: absolute;
+}
+.images img{
+    border-radius: 15px 50px 30px;
+    width: 50%;
+    height: 75%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: left 1.5s;
+}
+
+.images:hover .edit{
+    left: 5px;
+    border: 2px solid rgb(151, 99, 99); 
+    cursor: pointer;
+}
+
+
+.persondetail-content{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.mydetail-container{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+}
+.mydetail-container h1{
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    border-right: 3px solid orange;
+    white-space: nowrap;
+    margin-top: 10%;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 1.5s steps(30, end),blink-caret 1.5s step-end infinite;
+}
+.persondetail-container h1:hover{
+    border-bottom: 3px solid orange;
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 40% }
+}
+@keyframes blink-caret{
+    from, to{border-color: transparent}
+    50% {border-color: orange}
+}
+.education-content{
+    width: 560px;
+    height: 450vh;
+    max-width: 200%;
+    
+
+}
+.education-container{
+    width: 550px;
+    height: 304vh;
+    padding-top: 40px;
+    
+}
+.skill{
+    width: 300px;
+    height: 40vh;
+    color: #fff;
+    font-family: monospace;
+    font: weight 5px;
+    font-size: large;   
+    padding: 20%;  
+}
+.skill h1{
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    border-top: 3px solid orange;
+    white-space: nowrap;
+    margin-top: 10%;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 1.5s steps(30, end),blink-caret 1.5s step-end infinite;
+}
+.skill p{
+    padding-top: 30%;
+}
+
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 100% }
+}
+@keyframes blink-caret{
+    from, to{border-color: transparent}
+    50% {border-color: orange}
+}
+
+
+.Timeline{
+    width: 300px;
+    height: 100px;
+    color: #fff;
+    font-family: monospace;
+    font: weight 5px;
+    font-size: large;   
+    padding: 20%; 
+    margin-top: 5%;
+}
+
+.Timeline h1{
+    width: 140px;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    border-top: 3px solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 1.5s steps(30, end),blink-caret 1.5s step-end infinite;
+}
+.Timeline p{
+    width: 500px;
+    margin-top: 20%;
+    padding-top: 20%;
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 30% }
+}
+@keyframes blink-caret{
+    from, to{border-color: transparent}
+    50% {border-color: orange}
+}
+
+
+.Education{
+    width: 150%;
+    height: 230px;
+    color: #fff;
+    font-family: monospace;
+    font: weight 5px;
+    font-size: large;  
+    padding: 20%; 
+    margin-left: 80%;  
+}
+.Education h1{
+    width: 150px;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    border-top: 3px solid orange;
+    white-space: nowrap;
+    margin: -30px auto;
+    letter-spacing: .15em;
+    animation: typing 1.5s steps(30, end),blink-caret 1.5s step-end infinite;
+}
+.Education p{
+    margin-left: 37%;
+    margin-top: 2%;
+    padding-top: 10%;
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 30% }
+}
+@keyframes blink-caret{
+    from, to{border-color: transparent}
+    50% {border-color: orange}
+}
+
+
+.Projects{
+    width: 150%;
+    height: 100px;
+    color: #fff;
+    font-family: monospace;
+    font: weight 5px;
+    font-size: large;  
+    padding: 20%;
+    margin-top: -10%;
+    margin-left: 80%;
+}
+
+.Projects h1{
+    width: 150px;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    border-top: 3px solid orange;
+    white-space: nowrap;
+    margin-top: 10%;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 1.5s steps(30, end),blink-caret 1.5s step-end infinite;
+}
+.Projects p{
+    margin-left: 37%;
+    padding-top: 10%;
+    margin-top: 2%;
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 30% }
+}
+@keyframes blink-caret{
+    from, to{border-color: transparent}
+    50% {border-color: orange}
+}
+
+
+
+.Certifications{
+    height: 200px;
+    color: #fff;
+    font-family: monospace;
+    font: weight 5px;
+    font-size: large;    
+    padding: 20%; 
+    margin-top: 20%;
+}
+
+.Certifications h1{
+    width: 220px;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    border-top: 3px solid orange;
+    white-space: nowrap;
+    margin-top: 10%;
+    margin: 0 0;
+    letter-spacing: .15em;
+    animation: typing 1.5s steps(30, end),blink-caret 1.5s step-end infinite;
+}
+.Certifications p{
+    padding-top: 10%;
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 30% }
+}
+@keyframes blink-caret{
+    from, to{border-color: transparent}
+    50% {border-color: orange}
+}
+
+.Hobbies{
+    height: 200px;
+    color: #fff;
+    font-family: monospace;
+    font: weight 5px;
+    font-size: large;
+    padding: 20%;    
+}
+.Hobbies h1{
+    width: 120px;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    border-top: 3px solid orange;
+    white-space: nowrap;
+    margin-top: 10%;
+    margin: 0 0;
+    letter-spacing: .15em;
+    animation: typing 1.5s steps(30, end),blink-caret 1.5s step-end infinite;
+}
+.Hobbies p{
+    padding-top: 10%;
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 30% }
+}
+@keyframes blink-caret{
+    from, to{border-color: transparent}
+    50% {border-color: orange}
+}
+
+.Achievements{
+    height: 200px;
+    color: #fff;
+    font-family: monospace;
+    font: weight 5px;
+    font-size: large;
+    padding: 20%; 
+    margin-top: 5%;
+
+}
+
+.Achievements h1{
+    width: 200px;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    border-top: 3px solid orange;
+    white-space: nowrap;
+    margin-top: 10%;
+    margin: 0 0;
+    letter-spacing: .15em;
+    animation: typing 1.5s steps(30, end),blink-caret 1.5s step-end infinite;
+}
+.Achievements p{
+    padding-top: 20%;
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 30% }
+}
+@keyframes blink-caret{
+    from, to{border-color: transparent}
+    50% {border-color: orange}
+}
+.foot{
+    width: 100%;
+    height: 20vh;
+    max-width: 200%;
+    margin: 0 50%;
+    font-family: 'nothing You Could Do' cursive;
+}
+.foot-container{
+    width: 100%;
+    height: 24vh;
+    padding-top: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica';
+    font-weight: 400;
+    min-width: 0;
+}
+.foot-container h1{
+    width: 225px;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    border-right: 3px solid orange;
+    white-space: nowrap;
+    margin-top: 10%;
+    margin: 0 35%;
+    letter-spacing: .15em;
+    animation: typing 1.5s steps(30, end),blink-caret 1.5s step-end infinite;
+}
+.foot-container h1:hover{
+    border-bottom: 3px solid orange;
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 30% }
+}
+@keyframes blink-caret{
+    from, to{border-color: transparent}
+    50% {border-color: orange}
+}
+
+.card{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: weight 4px;
+}
+
+.card-box{
+    background: #fff;
+    box-shadow: 2px solid orange;
+    border-radius: 5px;
+    max-width:60%;
+    margin-top: 5%;
+    margin-left: 20%;
+    height:100vh;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-top: 5px solid orange;
+}
+.mes{
+    display: block;
+    font-family: cursive;
+    margin: 10px auto 5px;
+    width: 300px;
+    margin-top: 10%;
+}
+.termsandconditions{
+    margin: 0 10px 5px 80px;
+    margin-left: 32%;
+}
+.contact{
+    margin-left: 35%;
+    font-size: 2em;
+    font-weight: bold;
+    border-top: 3px solid orange;
+    width: 200px;
+}
+.name{
+    margin-top: 10%;
+    margin-left: 20%;
+    background-color: #ebebeb;
+    color: #000;
+    font-family: cursive;
+    font-size: medium;
+}
+.name:hover{
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.2s;
+}
+.Email{
+    margin-top: 10%;
+    margin-left: 2%;
+    background-color: #ebebeb;
+    color: #000;
+    font-family: cursive;
+    font-size: medium;  
+}
+.Email:hover{
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.2s;
+}
+.message{
+    margin-top: 10%;
+    margin-left: 2%;
+    background-color: #ebebeb;
+    color: #000;
+    font-family: cursive;
+    font-size: medium; 
+    height: 10rem;
+}
+.message:hover{
+    border-bottom: 5px solid #0e3721;
+    height: 12em;
+    width: 380px;
+    transition: ease 0.5s;
+}
+.formEntry{
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+}
+.submit{
+    width:200px;
+    color: #ffff;
+    background-color: #0e3721;
+    font-size: 20px;
+}
+.submit:hover{
+    box-shadow: 5px 5px 10px 5px orange;
+    transform: translateY(-3px);
+    width: 300px;
+    border: 5px solid rgb(53, 33, 33);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.social-media{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inks{
+    width: 40px;
+    height: 20vh;
+    position: absolute;
+    margin-top: 75%;
+    margin-left: 20%;
+
+}
+.inks img{
+    width: 80%;
+    height: 5vh;
+    position: absolute;
+}
+.insta{
+    cursor: pointer;
+    margin-left: -150px;
+}
+.linkedin{
+    cursor: pointer;
+    margin-left:30px
+}
+.github{
+    cursor: pointer;
+    margin-left: 200px;
+}
+.media{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1{
+    width: 40px;
+    height: 50vh;
+    position: absolute;
+    margin-top: 60%;
+    margin-left: 20%;
+}
+.container1 p{
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-left: -405px;
+}
+.container2{
+    width: 40px;
+    height: 50vh;
+    position: absolute;
+    margin-top: 60%;
+    margin-left: 20%;
+}
+.container2 p{
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-left: -105px;
+}
+.container3{
+    width: 130%;
+    height: 50vh;
+    position: absolute;
+    margin-top: 60%;
+    margin-left: 21%;
+}
+.container3 p{
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-left: 355px;
+}
+.container1 img{
+    width: 50px;
+    height: 7vh;
+    position: absolute;
+}
+.container2 img{
+    width: 50px;
+    height: 7vh;
+    position: absolute;
+}
+.container3 img{
+    width: 50px;
+    height: 7vh;
+    position: absolute;
+}
+
+.location{
+    cursor: pointer;
+    margin-left: -400px;
+}
+.phone{
+    cursor: pointer;
+}
+.email{
+    cursor: pointer;
+    margin-left: 400px;
+    
+}
+.copywrites{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.content1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width:100%;
+    width: 20%;
+    height: 20vh;
+    position: absolute;
+    margin-top: 80%;
+    margin-left: 14%;
+}
+.content2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 80%;
+    height: 10vh;
+    position: absolute;
+    margin-top: 80%;
+    margin-left: 14%;
+}
+
+.content1 p{
+    border-bottom: 3px solid #fff;
+    color: #fff;
+}
+.content2 p{
+    margin-left: 40px;
+    margin-top: 5%;
+    color: #fff;
+}
